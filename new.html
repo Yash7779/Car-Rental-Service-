@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png"/>
+    <style>
+        .enjoyy {
+            position: relative;
+        }
+       
+      /This CSS code is defining the styles for a container that holds text/
+        .nwaa {
+            position: absolute;
+            color: rgb(255, 255, 255);
+            left: 2.45rem;
+            top: 2rem;
+            background-color: rgb(41, 41, 41, 0.8);
+            padding: 0 1rem;
+            margin-top: 24rem;
+            
+        }
+    </style>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        .openBtn {
+          display: flex;
+          justify-content: left;
+        }
+        .openButton {
+          border: none;
+          border-radius: 5px;
+          background-color: #1c87c9;
+          color: white;
+          padding: 14px 20px;
+          cursor: pointer;
+          position: absolute;
+          top:20px;
+          right:20px; 
+        }
+        .loginPopup {
+          position: relative;
+          text-align: center;
+          width: 100%;
+        }
+        .formPopup {
+          display: none;
+          position: fixed;
+          left: 45%;
+          top: 5%;
+          transform: translate(-50%, 5%);
+          border: 3px solid #999999;
+          z-index: 9;
+        }
+        .formContainer {
+          max-width: 300px;
+          padding: 20px;
+          background-color: #fff;
+        }
+        .formContainer input[type=text],
+        .formContainer input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 20px 0;
+          border: none;
+          background: #eee;
+        }
+        .formContainer input[type=text]:focus,
+        .formContainer input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        .formContainer .btn {
+          padding: 12px 20px;
+          border: none;
+          background-color: #8ebf42;
+          color: #fff;
+          cursor: pointer;
+          width: 100%;
+          margin-bottom: 15px;
+          opacity: 0.8;
+        }
+        .formContainer .cancel {
+          background-color: #cc0000;
+        }
+        .formContainer .btn:hover,
+        .openButton:hover {
+          opacity: 1;
+      }
+  </style>
+</head>
+<body>
+    <div class="navbar">
+            <img src="Black and White Simple Elegant Car Service Logo.png" alt="Logo" class="logo">
+            <div class="nav-options"><a class="active" href="new.HTML">Home</a>
+                <a href="aboutus.html">About us</a>
+                <a href="contactus.html">Contact us</a>
+                <a  class= "login" href="loginpage.html">Logout</a>
+                <a  class="openBtn" class="openButton" onclick="openForm()" class= "signup" href="#signup">Sign up</a>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search" placeholder="     Search any car ">
+                <a href="faq.html" class="faq">Any Faq?</a>
+                <a href="old.html" class="forbooking"> For Booking</a>
+    </div>
+    </div>
+
+
+    <div>
+        <h2 class="heading">Car Rental Platform</h2>
+    </div>
+<div class="banner">
+    <div >
+           <br>
+           <br>
+           <div class="banner" style="background-image: url('sports-car-side-view-white-4k_1538937694.jpg'); background-size: cover; background-position: center; height: 400px;">
+            <div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            
+        
+           <span class="learn">Book Your Car Here</span>
+           <br>
+           <br>
+           <br>
+           <input type="tel" class="phoneno" placeholder="Enter your mobile no." maxlength="10" required>
+           <p class="yash">By signing up, you agree to receive transaction updates on Whatsapp. <br>
+            You may also receive a call from our representative to help your
+        <br>open the account.</p>
+
+        <input type="submit" value="Submit" id="submit1" class="button"> 
+    </div></div>
+
+   
+    
+    <section>
+        <h2 class="news">Stay Updated</h2>
+        <p class="fingerprints">Get the latest news at your fingerprints</p>
+        <h2>Book Car With Us</h2>
+</section>
+
+<div class="slider-frame">
+    <div class="slide-images">
+        <div class="img-container">
+            <img src="374cd3e880ce0b648b9995c9a1ece6b8.jpg" alt="image1">
+        </div>
+        <div class="img-container">
+            <img src="forex-companies2-1024x684.jpg" alt="image1">
+        </div>
+        <div class="img-container">
+            <img src="istockphoto-1155610132-612x612.jpg" alt="image1">
+        </div>
+    </div>
+</div>
+
+<div class="enjoyy">
+    <h2 class="enjoy">Car Booking at your Fingertips</h2>
+    <br>
+    
+    <img  src="1041088.jpg" alt="Image" height="500px" width="1100px">
+
+</div>
+<div class="loginPopup">
+    <div class="formPopup" id="popupForm">
+      <form action="new.HTML" class="formContainer">
+        <h2 class="signuphere">Sign Up</h2>
+        <label for="email">
+          <strong>E-mail</strong>
+        </label>
+        <input type="text" id="email" placeholder="Your Email" name="email" required>
+        <label for="psw">
+          <strong>Password</strong>
+        </label>
+        <input type="password" id="psw" placeholder="Your Password" name="psw" required>
+        <button type="submit" class="btn">Log in</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+  </div>
+  <script> 
+    function openForm() {
+      document.getElementById("popupForm").style.display = "block";
+    }
+    function closeForm() {
+      document.getElementById("popupForm").style.display = "none";
+  }
+  </script>
+
+</body>
+</html>
